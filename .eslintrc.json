@@ -1,0 +1,58 @@
+{
+    "env": {
+        "node": true,
+        "es2021": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": ["@typescript-eslint"],
+    "rules": {
+        "semi": 1,
+        "require-await": 1,
+        "no-unused-vars": 0,
+        "@typescript-eslint/explicit-function-return-type": [
+            1,
+            {
+                "allowExpressions": false,
+                "allowTypedFunctionExpressions": true,
+                "allowHigherOrderFunctions": true,
+                "allowDirectConstAssertionInArrowFunctions": true,
+                "allowConciseArrowFunctionExpressionsStartingWithVoid": true
+            }
+        ],
+        "no-var": 2,
+        "indent": 1,
+        "no-multi-spaces": 1,
+        "space-in-parens": 1,
+        "no-multiple-empty-lines": 1,
+        "no-empty": 1,
+        "no-undef" : 1,
+        "prefer-const": 1,
+        "no-use-before-define": 0,
+        "@typescript-eslint/member-delimiter-style": 1,
+        "node/no-unsupported-features/es-syntax": 0,
+        "node/no-unsupported-features/es-builtins": 0,
+        "node/exports-style": ["error", "module.exports"],
+        "node/prefer-global/buffer": ["error", "always"],
+        "node/prefer-global/console": ["error", "always"],
+        "node/prefer-global/process": ["error", "always"],
+        "node/prefer-global/url-search-params": ["error", "always"],
+        "node/prefer-global/url": ["error", "always"],
+        "node/prefer-promises/dns": "error",
+        "node/prefer-promises/fs": "error",
+        "node/file-extension-in-import": 0,
+        "node/no-missing-import": 0,
+        "node/no-callback-literal": 1,
+        "node/no-extraneous-import": 0,
+        "callback-return": 2,
+        "handle-callback-err": 2,
+        "consistent-return": 0,
+        "node/no-unpublished-import": 0,
+        "no-useless-escape": 1,
+        "no-console" : 1
+    },
+    "extends": ["eslint:recommended", "plugin:node/recommended"]
+}

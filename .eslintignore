@@ -1,0 +1,7 @@
+**/*.js
+**/*.js.map
+**/*.json
+**/*.md
+node_modules
+Dockerfile
+data
